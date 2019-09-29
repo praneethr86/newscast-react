@@ -26,5 +26,6 @@ Fun project to build a react web version of newscast-cli app.
 
 ## step 4
 
-- deploy on heroku and access it via mobile
+- Make the UI responsive
+- deploy on heroku
 - and we are done !
