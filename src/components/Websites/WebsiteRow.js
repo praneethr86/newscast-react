@@ -1,7 +1,11 @@
 import React from 'react';
 
-const WebsiteRow = () => {
-  return <div>Website Row</div>;
+const WebsiteRow = ({ websiteName }) => {
+  return (
+    <tr>
+      <td>{websiteName}</td>
+    </tr>
+  );
 };
 
 export default WebsiteRow;

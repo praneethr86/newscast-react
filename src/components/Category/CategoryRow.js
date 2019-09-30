@@ -1,7 +1,11 @@
 import React from 'react';
 
-const CategoryRow = () => {
-  return <div>Category Row</div>;
+const CategoryRow = ({ categoryName }) => {
+  return (
+    <tr>
+      <th>{categoryName}</th>
+    </tr>
+  );
 };
 
 export default CategoryRow;
