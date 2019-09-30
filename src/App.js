@@ -1,21 +1,34 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className='App'>
-        <div className='App-header'>
-          <img src={logo} className='App-logo' alt='logo' />
-          <h2>Simple Newsscraper</h2>
-        </div>
-        <p className='App-intro'>
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+const App = () => {
+  const NEWSLIST = [
+    { category: 'Editorials', website: 'Hindu Editorial' },
+    { category: 'Editorials', website: 'Hindu Lead Opinion' },
+    { category: 'Editorials', website: 'Economic Times' },
+    { category: 'Editorials', website: 'Indian Express Editorial' },
+    { category: 'Editorials', website: 'Indian Express Columns' },
+    { category: 'Editorials', website: 'Hindu Business Line' },
+    { category: 'Editorials', website: 'The Guardian' },
+    { category: 'Editorials', website: 'LiveMint' },
+    { category: 'Magazines', website: 'Harvard Business Review' },
+    { category: 'Magazines', website: 'Project Syndicate' },
+    { category: 'Magazines', website: 'The Economist' },
+    { category: 'Magazines', website: 'The Atlantic' },
+    { category: 'Magazines', website: 'The NewYorker' },
+    { category: 'Magazines', website: 'Frontline by Hindu' },
+    { category: 'Magazines', website: 'LongReads' },
+    { category: 'Magazines', website: 'The Hindu Explains' },
+    { category: 'SciTech', website: 'TechCrunch' },
+    { category: 'SciTech', website: 'The Next Web' },
+    { category: 'SciTech', website: 'ReadWrite' },
+    { category: 'SciTech', website: 'Scientific American' },
+    { category: 'Sports', website: 'ESPN F1' },
+    { category: 'Sports', website: 'Autosport F1' },
+    { category: 'Sports', website: 'Premier League News' }
+  ];
+
+  return <NewsTable newslist={newslist} />;
+};
 
 export default App;
