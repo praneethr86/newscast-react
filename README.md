@@ -74,3 +74,8 @@ Fun project to build a react web version of newscast-cli app.
   - Articles Table
     - ArticleRow
   - Content Table
+
+## Explore
+
+- Usage of React Router
+- Usage of packaging - webpack

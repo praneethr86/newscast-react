@@ -29,7 +29,7 @@ const CategoryTable = ({ categories }) => {
     <table>
       <thead>
         <tr>
-          <th>Website</th>
+          <th>List of Websites</th>
         </tr>
       </thead>
       <tbody>{rows}</tbody>
