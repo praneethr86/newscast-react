@@ -26,14 +26,16 @@ const CategoryTable = ({ categories }) => {
   });
 
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>List of Websites</th>
-        </tr>
-      </thead>
-      <tbody>{rows}</tbody>
-    </table>
+    <div class='newscategory'>
+      <table class='categorytable'>
+        <thead>
+          <tr>
+            <th>Pick Your News</th>
+          </tr>
+        </thead>
+        <tbody>{rows}</tbody>
+      </table>
+    </div>
   );
 };
 

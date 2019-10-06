@@ -3,7 +3,7 @@ import React from 'react';
 const CategoryRow = ({ categoryName }) => {
   return (
     <tr>
-      <th>{categoryName}</th>
+      <th class='categoryRow'>{categoryName}</th>
     </tr>
   );
 };

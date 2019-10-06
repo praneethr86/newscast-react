@@ -3,7 +3,7 @@ import React from 'react';
 const WebsiteRow = ({ websiteName }) => {
   return (
     <tr>
-      <td>{websiteName}</td>
+      <td class='websiteRow'>{websiteName}</td>
     </tr>
   );
 };

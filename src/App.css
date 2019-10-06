@@ -1,24 +1,35 @@
-.App {
-  text-align: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #425d8f;
+  font-family: sans-serif;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.search {
+  height: 50px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.newscategory {
+  padding: 10px 10px 0 0;
+  color: rgb(209, 204, 204);
 }
 
-.App-intro {
-  font-size: large;
+.categoryRow {
+  background-color: #123552;
+  color: rgb(206, 206, 206);
+  font-size: 20px;
+  color: #97c4e9;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.websiteRow {
+  font-weight: normal;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  color: #41698a;
+  padding: 5px;
+  background-color: rgb(209, 209, 209);
 }
