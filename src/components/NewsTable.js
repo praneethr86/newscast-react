@@ -1,14 +1,17 @@
 import React from 'react';
 import CategoryTable from './Category/CategoryTable';
-import Searchbar from './Searchbar';
+// import Searchbar from './Searchbar';
+import ArticlesTable from './Articles/ArticlesTable';
 import ContentTable from './Articles/ContentTable';
 
 const NewsTable = ({ categories }) => {
   return (
     <div class='container'>
-      <Searchbar />
       <CategoryTable categories={categories} />
-      <ContentTable />
+      <div class='details'>
+        <ArticlesTable />
+        <ContentTable />
+      </div>
     </div>
   );
 };
