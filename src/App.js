@@ -1,4 +1,7 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+import store from './store';
+
 import './App.css';
 
 import NewsTable from './components/NewsTable';
@@ -31,9 +34,11 @@ const App = () => {
   ];
 
   return (
-    <section className='container'>
-      <NewsTable categories={NEWSLIST} />
-    </section>
+    <Provider store={store}>
+      <section className='container'>
+        <NewsTable categories={NEWSLIST} />
+      </section>
+    </Provider>
   );
 };
 
