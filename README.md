@@ -79,3 +79,12 @@ Fun project to build a react web version of newscast-cli app.
 
 - Usage of React Router
 - Usage of packaging - webpack
+
+## Next Steps
+
+- Upon click of news site, should hit a route which takes you to corresponding cheerio loader and scraper (react-router-dom)
+- Get list of URLs and title, and set state (redux)
+- Re-render the Articles Table (action)
+- Upon click of article, should hit a route to scraping news article content (react-router-dom)
+- get content and set to state (redux)
+- re-render the content table (action)
