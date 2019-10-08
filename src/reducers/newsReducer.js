@@ -8,9 +8,15 @@ const initialState = {
 export default function(state = initialState, action) {
   switch (action.type) {
     case FETCH_ARTICLES:
-      return state; //placeholder
+      return {
+        ...state,
+        articles: action.payload
+      };
     case FETCH_CONTENT:
-      return state; //placeholder
+      return {
+        ...state,
+        content: article.payload
+      };
     default:
       return state;
   }
