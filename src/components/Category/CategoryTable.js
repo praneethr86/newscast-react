@@ -19,6 +19,7 @@ const CategoryTable = ({ categories }) => {
     rows.push(
       <WebsiteRow
         websiteName={category.websiteName}
+        websiteURL={category.websiteURL}
         key={category.websiteName}
       />
     );
