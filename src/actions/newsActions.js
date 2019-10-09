@@ -1,5 +1,6 @@
 const cheerio = require('cheerio');
 const rp = require('request-promise');
+const htmlToText = require('html-to-text');
 
 import { FETCH_ARTICLES, FETCH_CONTENT } from './types';
 
@@ -45,4 +46,21 @@ export const fetchContent = ({ articleURL }) => dispatch => {
   //hit article page
   //scrape content and set in payload
   //dispatch with type and payload to reducer
+
+  const optionsParams = {
+    url: options.url,
+    rejectUnauthorized: false
+  };
+
+  requestContent(optionsParams).then(function(body) {
+    const $ = cheerio.load(body);
+    let articleMarkup = $('.article')
+      .find('p')
+      .text();
+    content = htmlToText.fromString(articleMarkup);
+    dispatch({
+      type: FETCH_CONTENT,
+      payload: content
+    });
+  });
 };
