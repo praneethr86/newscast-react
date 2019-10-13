@@ -3,12 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "async_hooks": "^1.0.0",
+    "cheerio": "^1.0.0-rc.3",
+    "html-to-text": "^5.1.1",
+    "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.1",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "0.9.x",
     "redux": "^4.0.4",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "request-promise": "^4.2.4"
   },
   "devDependencies": {},
   "scripts": {

@@ -1,6 +1,5 @@
 import React from 'react';
 import CategoryTable from './Category/CategoryTable';
-// import Searchbar from './Searchbar';
 import ArticlesTable from './Articles/ArticlesTable';
 import ContentTable from './Articles/ContentTable';
 

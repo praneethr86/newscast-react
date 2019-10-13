@@ -15,7 +15,7 @@ export default function(state = initialState, action) {
     case FETCH_CONTENT:
       return {
         ...state,
-        content: article.payload
+        content: action.payload
       };
     default:
       return state;

@@ -1,9 +1,11 @@
 import React from 'react';
 
-const WebsiteRow = ({ websiteName }) => {
+const WebsiteRow = ({ websiteName, onWebsiteClick }) => {
   return (
     <tr>
-      <td class='websiteRow'>{websiteName}</td>
+      <td class='websiteRow' onclick={onWebsiteClick}>
+        {websiteName}
+      </td>
     </tr>
   );
 };

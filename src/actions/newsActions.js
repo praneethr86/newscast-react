@@ -47,8 +47,12 @@ export const fetchContent = ({ articleURL }) => dispatch => {
   //scrape content and set in payload
   //dispatch with type and payload to reducer
 
+  function requestContent(url) {
+    return rp(url);
+  }
+
   const optionsParams = {
-    url: options.url,
+    url: articleURL,
     rejectUnauthorized: false
   };
 
@@ -57,7 +61,7 @@ export const fetchContent = ({ articleURL }) => dispatch => {
     let articleMarkup = $('.article')
       .find('p')
       .text();
-    content = htmlToText.fromString(articleMarkup);
+    let content = htmlToText.fromString(articleMarkup);
     dispatch({
       type: FETCH_CONTENT,
       payload: content
